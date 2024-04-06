@@ -1,0 +1,4 @@
+.dropdown-menu .dropdown-item:hover {
+    background-color: #343a40; /* Cambiar el color de fondo al pasar el mouse */
+    color: #fff; /* Cambiar el color del texto al pasar el mouse */
+}
