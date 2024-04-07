@@ -1,0 +1,114 @@
+.dropdown-menu .dropdown-item {
+    background-color: rgb(61, 68, 80);
+    color: white;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-group .btn, #dropdownMenuButton {
+    color: rgb(197, 195, 194);
+    padding-left: 11px;
+    font-size: 11px;
+}
+
+.btn-group .btn:hover, #dropdownMenuButton:hover {
+    color: white;
+}
+
+.vertical-line {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    height: 13px;
+    align-self: center;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.offcanvas {
+    padding: 0px;
+    margin: 0px;
+}
+
+.offcanvas-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#offcanvasLeft {
+    color: white;
+    background-color: rgb(23, 26, 33);
+}
+
+#header-menu a {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0px;
+
+    padding: 3px;
+}
+
+#header-button {
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+#download-button {
+    color: rgb(240, 240, 240);
+    background-color: rgb(92, 126, 16);
+    border-radius: 0;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+#download-button:hover {
+    color: white;
+    background-color: rgb(108, 144, 24);
+}
+
+#main-button {
+    padding: 10px;
+    padding-left: 20px;
+    margin: 0px;
+    text-align: left;
+    font-size: 22px;
+    width: 100%;
+
+    border-style:outset;
+    border-width: 1px;
+
+    background-color: rgb(23, 26, 33);
+    color: rgb(189, 189, 189);
+}
+
+#secondary-button {
+    padding: 5px;
+    padding-left: 20px;
+    margin: 0px;
+    text-align: left;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+
+    background: none;
+    color: rgb(131, 128, 132);
+}
+
+#copyright-hamburger {
+    font-size: 11px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: rgb(131, 128, 132);  
+}
+
+.bottom_aligner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
