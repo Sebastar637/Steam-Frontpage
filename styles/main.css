@@ -42,6 +42,36 @@ body {
     margin: 0px;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 0.75rem;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo */
+    border: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+
 #search-navbar {
     border-radius: 10px;
     background-color: rgba(26, 56, 126, 0.9);

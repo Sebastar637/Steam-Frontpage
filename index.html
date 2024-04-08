@@ -31,10 +31,13 @@
                     <button id="main-button">
                         Comunidad
                     </button>
-                    <button id="main-button" style="margin-bottom: 10px;">
+                    <button id="main-button">
                         Soporte
                     </button>
-
+                    <button id="main-button" style="margin-bottom: 10px;">
+                        <img src="img/cart.svg" alt="" style="filter: invert(100%); margin-right: 6px; height: 25px;">
+                        Carrito [1]
+                    </button>
 
                     <button id="secondary-button">
                         Cambiar idioma
@@ -158,7 +161,9 @@
                 <img src="img/page_bg_latam.jpg" alt="" class="position-absolute top-50 start-50 translate-middle" style="min-width: 100%; min-height: 100%; width: auto; height: auto;">
             </div>
             
-            <div id="search-navbar" class="navbar navbar-expand-lg position-absolute top-0 start-50 translate-middle d-none d-lg-block" style="width: 992px; margin-top: 50px;">
+
+
+            <div id="search-navbar" class="navbar navbar-expand-lg position-absolute top-0 start-50 translate-middle d-none d-lg-block" style="width: 992px; margin-top: 70px;">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -185,40 +190,173 @@
                             </li>
                         </ul>
                     </div>
-                    <form class="d-flex" style="background-color: rgb(49, 98, 130); border-radius: 5px; border-style: outset; border-color: rgb(85, 160, 203); border-width: 2px;">
+                    <form class="d-flex" style="background-color: rgb(49, 98, 130); border-radius: 5px; border-style: outset; border-color: rgb(85, 160, 203); border-width: 2px; position: relative;">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="height: 30px; background: none; border: none;">
                         <button style="background-color: rgb(85, 160, 203); border: none; display: flex; justify-content: center; align-items: center; border-radius: 5px; ">
-                            <img src="img/search_button.svg" alt="Buscar" class="search-button" style="height: 20px; filter: invert(27%) sepia(16%) saturate(1561%) hue-rotate(169deg) brightness(90%) contrast(89%);"> <!-- Cambia el color de la imagen aquí -->
+                            <img src="img/search_button.svg" alt="Buscar" class="search-button" style="height: 20px; filter: invert(27%) sepia(16%) saturate(1561%) hue-rotate(169deg) brightness(90%) contrast(89%);">
+                        </button>
+                        <button style="background-color: green; color: white; border: none; display: flex; justify-content: center; align-items: center; border-radius: 5px; position: absolute; right: 0px; top: 50%; transform: translateY(-240%);">
+                            <img src="img/cart.svg" alt="" style="filter: invert(100%); margin-right: 6px;">
+                            Carrito [1]
                         </button>
                     </form>
                 </div>
             </div>
+            
         </div>
     </header>
 
-
     <main>
-        <div class="container">
-            <h2 class="mt-5 mb-4">DESTACADOS Y RECOMENDADOS</h2>
+        <div class="container-sm">
+            <h2 class="mt-5 mb-4" style="margin-left: 10%;">DESTACADOS Y RECOMENDADOS</h2>
 
             <div id="carouselDestacados" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="carousel-inner" style="margin-left: 10%;">
+                    <div class="carousel-item">
                         <div class="row">
-                            <div class="col-md-6">
-                                <img src="placeholder_image.jpg" class="d-block w-100" alt="...">
+                            <div class="col-6">
+                                <img src="img/games/game0.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="col-md-6">
-                                <h3>Nombre del Juego</h3>
-                                <p>Precio del Juego</p>
+                            <div class="col-6">
+                                <h3>Astro Colony</h3>
+                                <p>$10.000</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Página 2 -->
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>BZZZT</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="carousel-item">
-                        <!-- Contenido similar al de la página 1, pero con diferentes imágenes, nombres y precios -->
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>Beat Hazard</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>Satisfactory</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>The Elder Scrolls: Online</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>Lies of P</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game6.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>Potion Craft</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game7.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>Entropy Effect</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game8.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>Content Warning</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game9.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>Palworld</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game10.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>Helldivers 2</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="img/games/game11.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-6">
+                                <h3>Enshrouded</h3>
+                                <p>$10.000</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -229,7 +367,7 @@
                 </button>
             </div>
         
-            <div class="d-flex justify-content-center mt-4">
+            <div class="d-flex justify-content-center mt-4" style=" margin-bottom: 20px;">
                 <button type="button" data-bs-target="#carouselDestacados" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselDestacados" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselDestacados" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -242,12 +380,9 @@
                 <button type="button" data-bs-target="#carouselDestacados" data-bs-slide-to="9" aria-label="Slide 10"></button>
                 <button type="button" data-bs-target="#carouselDestacados" data-bs-slide-to="10" aria-label="Slide 11"></button>
                 <button type="button" data-bs-target="#carouselDestacados" data-bs-slide-to="11" aria-label="Slide 12"></button>
-
             </div>
         </div>
-        
     </main>
-
 
     <footer class="bg-dark text-white text-center" style="padding: 15px 15%; font-size: 12px;">
         <p>
