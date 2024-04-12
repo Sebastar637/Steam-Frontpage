@@ -1,5 +1,9 @@
 body {  
     color: white;
+    background-color: rgb(33, 37, 41);
+}
+
+main {
     background-color: rgb(26, 41, 58);
 }
 
@@ -80,7 +84,7 @@ body {
 }
 
 .carousel-buttons {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .carousel-buttons button {

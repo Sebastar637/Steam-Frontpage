@@ -1,0 +1,45 @@
+.separator {
+    margin-left: 1px;
+    color: rgb(86, 112, 127);
+}
+
+.container {
+    max-width: 992px;
+    width: 100%;
+}
+
+.header {
+    padding: 10px 0px;
+}
+
+.product-card,
+.summary {
+    background-color: rgba(20, 31, 45, 0.7);
+}
+
+.product-card img {
+    width: 100%;
+    margin: 0;
+    padding: 5%;
+}
+
+.product-details {
+    padding-bottom: 20px;
+}
+
+.total-amount {
+    text-align: end;
+}
+
+.add-btn,
+.delete-btn,
+.buy-btn,
+.continue-shopping {
+    margin: 0;
+    padding: 0;
+    color: rgb(96, 111, 127);
+}
+
+.footer {
+    padding-bottom: 20px;
+}

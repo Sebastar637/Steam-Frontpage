@@ -10,6 +10,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/login.css">
 </head>
 
 <body>
@@ -121,44 +122,42 @@
                 </div>
             </div>  
         </div>
-
-        <div id="page-header-mobile" class="position-relative d-lg-none" style="background-image: linear-gradient(to right, rgb(59, 100, 144), rgb(15, 33, 110)); padding-bottom: 10px;">
-            <div class="container-fluid">
-                <ul class="navbar-nav flex-column text-start text-lg-center" style="border-radius: 5px; padding: 10px; color: white; text-shadow: 1px 1px 2px black; font-size: 14px;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tu Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nuevo y destacable</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Categorías</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tienda de puntos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Laboratorios</a>
-                    </li>
-                </ul>
-        
-                <form class="d-flex" style="background-color: rgb(95, 132, 155); border-radius: 5px; border-style: outset; border-color: black; border-width: 2px; width: 100%;">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="height: 30px; background: none; border: none; width: 100%;">
-                    <button style="background-color: rgb(85, 160, 203); border: none; display: flex; justify-content: center; align-items: center; border-radius: 5px; width: 40px;">
-                        <img src="img/search_button.svg" alt="Buscar" class="search-button" style="height: 20px; filter: invert(27%) sepia(16%) saturate(1561%) hue-rotate(169deg) brightness(90%) contrast(89%);">
-                    </button>
-                </form>
-            </div>
-        </div>  
     </header>
 
 
-    <main>
-
+    <main style="background-image: url(img/login_background.jpg); background-position: center; height: 100%;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="login-container" style="max-width: 500px; width: 100%; margin: 20% 0px;">
+                        <h3 class="text-center mb-4" style="font-weight: 1000; font-size: 2em;">Iniciar Sesión</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label" style="color: rgb(25, 153, 255); font-weight: 600; font-size: 1em;">INICIA SESION CON EL NOMBRE DE LA CUENTA</label>
+                                <input type="text" class="form-control" id="username" placeholder="" style="color: white;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label" style="color: rgb(175, 175, 175); font-size: 1em;">CONTRASEÑA</label>
+                                <input type="password" class="form-control" id="password" placeholder="" style="color: white;">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="remember">
+                                <label class="form-check-label" for="remember">Recuérdame</label>
+                            </div>
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary d-block mx-auto" id="button-login">Iniciar Sesión</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    
 
     <footer class="bg-dark text-white text-center" style="padding: 15px 15%; font-size: 12px;">
         <p>

@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1.page-title {
+    font-size: min(2.9vw, 32px);
+}
+
+.product-name {
+    font-size: min(2.5vw, 27.5px);
+}
+
+.product-price {
+    font-size: min(1.5vw, 16.5px);
+}
+
+.total-label,
+.notice,
+.buy-btn {
+    font-size: min(1.2vw, 13.2px);
+}
