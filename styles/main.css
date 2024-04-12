@@ -142,7 +142,7 @@ body {
     background-color: rgb(108, 144, 24);
 }
 
-#main-button {
+.main-button {
     padding: 10px;
     padding-left: 20px;
     margin: 0px;
@@ -150,11 +150,27 @@ body {
     font-size: 22px;
     width: 100%;
 
-    border-style:outset;
+
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 0px;
     border-width: 1px;
 
     background-color: rgb(23, 26, 33);
     color: rgb(189, 189, 189);
+}
+
+.main-button:hover {
+    border-style: solid;
+    border-color: black;
+    border-radius: 0px;
+    border-width: 1px;  
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 #secondary-button {
