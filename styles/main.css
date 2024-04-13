@@ -134,6 +134,10 @@ main {
     background-color: rgb(92, 126, 16);
     border-radius: 0;
 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     padding-top: 0px;
     padding-bottom: 0px;
 
