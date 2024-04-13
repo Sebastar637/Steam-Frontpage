@@ -1,0 +1,57 @@
+.card {
+    background-color: rgb(13, 19, 27);
+    height: min(30vw, 300px);
+    color: rgb(138, 139, 138);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: min(2vw, 20px);
+    color: rgb(255, 255, 255);
+}
+
+.card-subtitle {
+    font-size: min(1.6vw, 16px);
+    color: rgb(160, 160, 139);
+}
+
+.card-text {
+    font-size: min(1.6vw, 16px);
+    color: rgb(140, 139, 138);
+}
+
+.card-footer {
+    font-size: min(1.6vw, 16px);
+    border-color: rgb(39, 47, 56);
+    color: rgb(137, 137, 137);
+}
+
+.modal {
+    background-color: rgba(13, 19, 27, 0.5);
+}
+
+.modal-content {
+    background-color: rgb(13, 19, 27);
+    color: rgb(138, 139, 138);
+}
+
+.modal-header {
+    background-color: rgb(13, 19, 27);
+    color: rgb(214, 215, 216);
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    color: rgb(214, 215, 216);
+}
+
+.modal-body {
+    background-color: rgb(13, 19, 27);
+    color: rgb(138, 139, 138);
+}
+
+.modal-footer {
+    background-color: rgb(13, 19, 27);
+    color: rgb(137, 137, 137);
+    border-color: rgb(39, 47, 56);
+}
