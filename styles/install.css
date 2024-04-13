@@ -1,0 +1,22 @@
+main {
+    background: rgb(26,41,58);
+    background: linear-gradient(90deg, rgba(26,41,58,1) 0%, rgba(29,32,37,1) 20%, rgba(29,32,37,1) 100%);
+}
+
+#title {
+    font-size: min(3vw, 30px);
+}
+
+#status {
+    font-size: min(1.2vw, 12px);
+    margin-bottom: 0px;
+}
+
+#count {
+    font-size: min(2vw, 20px);
+}
+
+#button {
+    font-size: min(1.6vw, 16px);
+}
+
