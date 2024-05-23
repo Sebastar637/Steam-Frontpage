@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/login.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -132,7 +135,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="login-container" style="max-width: 500px; width: 100%; margin: 20% 0px;">
                         <h3 class="text-center mb-4" style="font-weight: 1000; font-size: 2em;">Iniciar Sesión</h3>
-                        <form action="" method="" enctype="" name="login">
+                        <form id="login-form" action="" method="" enctype="" name="login">
                             <div class="mb-3">
                                 <label for="username" class="form-label" style="color: rgb(25, 153, 255); font-weight: 600; font-size: 1em;">INICIA SESION CON EL NOMBRE DE LA CUENTA</label>
                                 <input type="text" class="form-control" id="username" placeholder="" style="color: white;">
@@ -151,6 +154,14 @@
                                         <button type="submit" class="btn btn-primary d-block mx-auto" id="button-login">Iniciar Sesión</button>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div id="mensajeError1" class="" style="text-align: center; color: rgb(193, 74, 55); margin-top: 10px; display: none;">
+                                Por favor, ingrese su nombre de usuario.
+                            </div>
+
+                            <div id="mensajeError2" class="" style="text-align: center; color: rgb(193, 74, 55); margin-top: 10px; display: none;">
+                                Por favor, ingrese su contraseña.
                             </div>
                         </form>
                     </div>
@@ -171,4 +182,40 @@
             <a href="">Cookies</a>
         </p>
     </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('#login-form').on('submit', function(event) {
+                event.preventDefault();
+    
+                var username = $('#username').val();
+                var password = $('#password').val();
+    
+                var isValid = true;
+    
+                if (username === '') {
+                    isValid = false;
+                    $('#mensajeError2').hide();
+                    $('#mensajeError1').fadeIn();
+                    $('#username').focus();
+                    return false;
+                }
+    
+                if (password === '') {
+                    isValid = false;
+                    $('#mensajeError1').hide();
+                    $('#mensajeError2').fadeIn();
+                    $('#password').focus();
+                    return false;
+                }
+
+                if (isValid) {
+                    $('#mensajeError1').hide();
+                    $('#mensajeError2').hide();
+
+                    this.submit();
+                }
+            });
+        });
+    </script>
 </body>
