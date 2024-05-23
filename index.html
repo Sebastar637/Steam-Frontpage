@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/install.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -146,12 +148,14 @@
                     </li>
                 </ul>
         
-                <form class="d-flex" style="background-color: rgb(95, 132, 155); border-radius: 5px; border-style: outset; border-color: black; border-width: 2px; width: 100%;">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="height: 30px; background: none; border: none; width: 100%;">
-                    <button style="background-color: rgb(85, 160, 203); border: none; display: flex; justify-content: center; align-items: center; border-radius: 5px; width: 40px;">
+                <form id="searchForm" class="d-flex" style="background-color: rgb(95, 132, 155); border-radius: 5px; border-style: outset; border-color: black; border-width: 2px; width: 100%;">
+                    <input id="searchText" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="height: 30px; background: none; border: none; width: 100%;" autocomplete="off">
+                    <button id="searchButton" style="background-color: rgb(85, 160, 203); border: none; display: flex; justify-content: center; align-items: center; border-radius: 5px; width: 40px;">
                         <img src="img/search_button.svg" alt="Buscar" class="search-button" style="height: 20px; filter: invert(27%) sepia(16%) saturate(1561%) hue-rotate(169deg) brightness(90%) contrast(89%);">
                     </button>
+                    <div id="autocomplete-list" class="autocomplete-items"></div>
                 </form>
+                
             </div>
         </div>  
         
@@ -222,7 +226,7 @@
                                     <h3 id="title">Astro Colony</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$8.000</p>
                                 </div>
                             </div>
                         </div>
@@ -254,7 +258,7 @@
                                     <h3 id="title">Beat Hazard</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$15.000</p>
                                 </div>
                             </div>
                         </div>
@@ -270,7 +274,7 @@
                                     <h3 id="title">Satisfactory</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$20.000</p>
                                 </div>
                             </div>
                         </div>
@@ -286,7 +290,7 @@
                                     <h3 id="title">The Elder Scrolls: Online</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$13.000</p>
                                 </div>
                             </div>
                         </div>
@@ -301,7 +305,7 @@
                                     <h3 id="title">Lies of P</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$25.000</p>
                                 </div>
                             </div>
                         </div>
@@ -316,7 +320,7 @@
                                     <h3 id="title">Potion Craft</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$25.000</p>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +335,7 @@
                                     <h3 id="title">Entropy Effect</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$40.000</p>
                                 </div>
                             </div>
                         </div>
@@ -346,7 +350,7 @@
                                     <h3 id="title">Content Warning</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$30.000</p>
                                 </div>
                             </div>
                         </div>
@@ -361,7 +365,7 @@
                                     <h3 id="title">Palworld</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$20.000</p>
                                 </div>
                             </div>
                         </div>
@@ -376,7 +380,7 @@
                                     <h3 id="title">Helldivers 2</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$28.000</p>
                                 </div>
                             </div>
                         </div>
@@ -391,12 +395,11 @@
                                     <h3 id="title">Enshrouded</h3>
                                 </div>
                                 <div class="mt-auto">
-                                    <p id="count">$10.000</p>
+                                    <p id="count">$12.000</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -423,6 +426,10 @@
                 </div>
             </div>
         </div>
+
+        <div id="cupon" style="text-align: center; font-size: larger; font-weight: 500; color: blue; padding-bottom: 10px;">
+            TENGO UN CUPON DE DESCUENTO
+        </div>
     </main>
 
     <footer class="bg-dark text-white text-center" style="padding: 15px 15%; font-size: 12px;">
@@ -436,5 +443,21 @@
             <a href="">Cookies</a>
         </p>
     </footer>
+
+    <script>
+        $('#cupon').one('click', function() {
+
+            var precios = document.querySelectorAll('#count');
+            
+            precios.forEach(function(precio) {
+                var valor = parseFloat(precio.textContent.replace('$', '').replace('.', ''));
+                var nuevoValor = valor * 0.8;
+
+                precio.innerHTML = '<span style="color: white; ">$' + nuevoValor.toLocaleString(undefined, {maximumFractionDigits: 2}) + '</span>';
+            });
+
+            $('#cupon').prop('disabled', true).fadeOut();
+        });
+    </script>
 </body>
 </html>
