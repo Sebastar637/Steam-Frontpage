@@ -1,61 +1,61 @@
 [
     {
-        "image": "img/games/game0.jpg",
+        "image": "./img/games/game0.jpg",
         "title": "Astro Colony",
         "price": "$8.000"
     },
     {
-        "image": "img/games/game1.jpg",
+        "image": "./img/games/game1.jpg",
         "title": "BZZZT",
         "price": "$10.000"
     },
     {
-        "image": "img/games/game2.jpg",
+        "image": "./img/games/game2.jpg",
         "title": "Beat Hazard",
         "price": "$15.000"
     },
     {
-        "image": "img/games/game3.jpg",
+        "image": "./img/games/game3.jpg",
         "title": "Satisfactory",
         "price": "$20.000"
     },
     {
-        "image": "img/games/game4.jpg",
+        "image": "./img/games/game4.jpg",
         "title": "The Elder Scrolls: Online",
         "price": "$13.000"
     },
     {
-        "image": "img/games/game5.jpg",
+        "image": "./img/games/game5.jpg",
         "title": "Lies of P",
         "price": "$25.000"
     },
     {
-        "image": "img/games/game6.jpg",
+        "image": "./img/games/game6.jpg",
         "title": "Potion Craft",
         "price": "$25.000"
     },
     {
-        "image": "img/games/game7.jpg",
+        "image": "./img/games/game7.jpg",
         "title": "Entropy Effect",
         "price": "$40.000"
     },
     {
-        "image": "img/games/game8.jpg",
+        "image": "./img/games/game8.jpg",
         "title": "Content Warning",
         "price": "$30.000"
     },
     {
-        "image": "img/games/game9.jpg",
+        "image": "./img/games/game9.jpg",
         "title": "Palworld",
         "price": "$20.000"
     },
     {
-        "image": "img/games/game10.jpg",
+        "image": "./img/games/game10.jpg",
         "title": "Helldivers 2",
         "price": "$28.000"
     },
     {
-        "image": "img/games/game11.jpg",
+        "image": "./img/games/game11.jpg",
         "title": "Enshrouded",
         "price": "$12.000"
     }
